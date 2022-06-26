@@ -1,12 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
+import {
+  MdEmail,
+} from "react-icons/md";
+
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,31 +22,27 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Currently working as MLOps Engineer in Vimaan Robotics, I bridge the gap between Machine Learning and DevOps
+              Currently working as
+                <b className="purple"> MLOps Engineer at Vimaan Robotics</b>
+              , I bridge the gap between Machine Learning and DevOps
               <br />
-              <br />I have a Masters with a specialization in Big Data Analytics, and 1+ YoE in 
-              <i>
+              <br />I have a Masters with a specialization in Big Data Analytics, and 1+ YoE in
                 <b className="purple"> Machine Learning Production. </b>
-              </i>
               <br />
               <br />
               You know how you need to scale after you've built an exciting Machine Learning product? &nbsp;
               <br />
-              <i>
                 <b className="purple">That's where I come in. </b>
-              </i>
               <br />
               <br />
               My skillset spans across multiple tech stacks in MLOps
               &nbsp;like
-              <i>
-                <b className="purple"> Computer Vision, Object Detection and Tracking, Data and Model Versioning, CI/CD/CT Automation and more.</b>
-              </i>
+                <b className="purple"> Data and Model Versioning, CI/CD/CT Automation, Scalable Inference Server, </b>and more.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} width={250} height={250} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -56,26 +55,6 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/sourabh-burnwal"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/BurnwalSourabh"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
                   href="https://www.linkedin.com/in/sourabhkumarburnwal"
                   target="_blank"
                   rel="noreferrer"
@@ -86,12 +65,32 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/sourabh.burnwal"
+                  href="https://github.com/sourabh-burnwal"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:burnwal.sourabh@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdEmail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/BurnwalSourabh"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
                 </a>
               </li>
             </ul>

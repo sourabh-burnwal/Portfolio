@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 4.0em !important;
+  width: 4.0em !important;
 }
 
 .navbar-nav .nav-link {
@@ -406,6 +406,7 @@ button:focus {
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
+  float: right;
 }
 .footer-copywright {
   text-align: center !important;
@@ -740,4 +741,14 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.new-class {
+  justify-content: right !important;
+}
+
+@media (max-width: 784px) {
+  .new-class {
+    display: none !important;
+  }
 }
