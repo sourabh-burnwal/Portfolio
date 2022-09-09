@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/sourabh-burnwal.github.io/src/Assets/Sourabh_Burnwal_CV.pdf";
+  "https://raw.githubusercontent.com/sourabh-burnwal/sourabh-burnwal.github.io/master/src/Assets/Sourabh_Burnwal_CV.pdf";
 
 // function ResumeNew() {
 //   const [width, setWidth] = useState(1200);
